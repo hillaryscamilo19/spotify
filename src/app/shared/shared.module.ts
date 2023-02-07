@@ -1,4 +1,3 @@
-import { AppModule } from './../app.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -18,7 +17,9 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
     CommonModule
   ],
   exports: [
-    SideBarComponent
+    SideBarComponent,
+    UserheaderComponent,
+    MediaplayerComponent
   ]
 })
 export class SharedModule { }
