@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TracksModules } from '@core/model/tracks.model';
+import * as dataRaw from '../../../../data/tracks.json';
 
 @Component({
   selector: 'app-tracks-page',
@@ -6,16 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./tracks-page.component.css']
 })
 export class TracksPageComponent {
-  mockTracksList = [
-    {
-      name: 'Te espere'
-    },
-    {
-      name: 'Ecos de Amor'
-    },
-    {
-      name: 'Segundo Plato'
-    }
+  mockTracksList: Array<TracksModules> = [
+
   ]
   // tracksTrending: Array<TrackModel> = []
   // tracksRandom: Array<TrackModel> = []
@@ -23,10 +17,12 @@ export class TracksPageComponent {
 
   // constructor(private trackService: TrackService) { }
 
-  // ngOnInit(): void {
-  //   this.loadDataAll() //TODO 📌📌
-  //   this.loadDataRandom() //TODO 📌📌
-  // }
+  ngOnInit(): void {
+    const { data }: any = (dataRaw as any).default
+    this.mockTracksList = data
+    // this.loadDataAll() //TODO 📌📌
+    // this.loadDataRandom() //TODO 📌📌
+  }
 
   // async loadDataAll(): Promise<any> {
   //   this.tracksTrending = await this.trackService.getAllTracks$().toPromise()
