@@ -97,13 +97,13 @@
       },
       {
           "_id": 7,
-          "name": "50 Cent - Candy Shop (feat. Olivia)",
-          "album": "50 Cent",
-          "cover": "https://i.scdn.co/image/ab67616d0000b27391f7222996c531b981e7bb3d",
+          "name": "Bachata En Fukuoka",
+          "album": "Asondeguerra",
+          "cover": "https://i.ytimg.com/vi/C8dwPIRcqlI/maxresdefault.jpg",
           "artist": {
-              "name": "50 Cent",
-              "nickname": "50 Cent",
-              "nationality": "US"
+              "name": "Juan Luis Guerra",
+              "nickname": "Juan Luis Guerra",
+              "nationality": "Dominicano"
           },
           "duration": {
               "start": 0,
@@ -113,19 +113,51 @@
       },
       {
           "_id": 8,
-          "name": "Bésame💋",
-          "album": "Valentino Ft MTZ Manuel Turizo (Video Oficial)",
-          "cover": "https://i1.sndcdn.com/artworks-000247627460-1hqnjr-t500x500.jpg",
+          "name": "People Watching",
+          "album": "Superache",
+          "cover": "https://i.scdn.co/image/ab67616d0000b2735597dc66a5d954fca364f264",
           "artist": {
-              "name": "Valentino",
-              "nickname": "Valentino",
-              "nationality": "CO"
+              "name": "Conan Gray",
+              "nickname": "Conan Gray",
+              "nationality": "estadounidense"
           },
           "duration": {
               "start": 0,
               "end": 333
           },
           "url": "http://localhost:3000/track-7.mp3"
-      }
+      },
+      {
+        "_id": 8,
+        "name": "Waiting For Love",
+        "album": "Avicii",
+        "cover": "https://i.ytimg.com/vi/cHHLHGNpCSA/maxresdefault.jpg",
+        "artist": {
+            "name": "Avicii",
+            "nickname": "Avicii",
+            "nationality": "Suecia"
+        },
+        "duration": {
+            "start": 0,
+            "end": 333
+        },
+        "url": "http://localhost:3000/track-7.mp3"
+    },
+    {
+      "_id": 8,
+      "name": "Dicelo",
+      "album": "Emociones",
+      "cover": "https://i.ytimg.com/vi/EKZfPGA3Hjw/maxresdefault.jpg",
+      "artist": {
+          "name": "Jay Wheeler & Zhamira Zambrano",
+          "nickname": "Jay Wheele",
+          "nationality": "Puerto Rico"
+      },
+      "duration": {
+          "start": 0,
+          "end": 333
+      },
+      "url": "http://localhost:3000/track-7.mp3"
+  }
   ]
 }

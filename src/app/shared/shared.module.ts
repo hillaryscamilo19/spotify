@@ -29,6 +29,8 @@ import { PlayListBodyComponent } from './components/play-list-body/play-list-bod
     UserheaderComponent,
     MediaplayerComponent,
     SectionGenericComponent,
+    PlayListHeaderComponent,
+    PlayListBodyComponent
   ]
 })
 export class SharedModule { }
