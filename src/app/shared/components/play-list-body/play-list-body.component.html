@@ -5,7 +5,7 @@
       <li>AGREGADO EL</li>
       <i class="fa-regular fa-clock"></i>
   </ul>
-  <ul class="play-list-rows" *ngFor="let track of tracks ">
+  <ul class="play-list-rows" *ngFor="let track of tracks | orderList">
       <li class="track-name">
           <ng-container *ngTemplateOutlet="coverSection;context:{track:track}"></ng-container>
       </li>
