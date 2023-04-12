@@ -1,5 +1,7 @@
+import { TracksModule } from './../../../modules/tracks/tracks.module';
 import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { TracksModules } from '@core/model/tracks.model';
 
 @Component({
   selector: 'app-mediaplayer',
@@ -7,10 +9,12 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./mediaplayer.component.css']
 })
 export class MediaplayerComponent implements OnInit, OnDestroy {
-  mockCover: any = {
+  mockCover: TracksModules = {
     cover: 'https://i.ytimg.com/vi/B_1YBFttefY/maxresdefault.jpg',
     name: 'Te Espere',
-    album: 'Jesse & Joy '
+    album: 'Jesse & Joy ',
+    url: 'http://localhost/Tracks.mp3',
+    _id: 1
 
   }
 

@@ -1,1 +1,37 @@
-<p>play-list-body works!</p>
+<div class="play-list-body">
+  <ul class="play-list-table-header">
+      <li (click)="ChangeSort('name')"># TITULO</li>
+      <li (click)="ChangeSort('name')">álbum</li>
+      <li>AGREGADO EL</li>
+      <i class="fa-regular fa-clock"></i>
+  </ul>
+  <ul class="play-list-rows" *ngFor="let track of tracks | orderList: optionSort.property: optionSort.order">
+      <li class="track-name">
+          <ng-container *ngTemplateOutlet="coverSection;context:{track:track}"></ng-container>
+      </li>
+      <li class="track-name-opacity">
+          {{track.album}}
+      </li>
+      <li class="track-name-opacity">
+          {{track.album}}
+      </li>
+      <li class="track-name-opacity">
+        <i class="fa-sharp fa-solid fa-heart"></i>
+        2:50
+      </li>
+
+  </ul>
+</div>
+
+<!--template del cover-->
+<ng-template #coverSection let-track="track">
+
+  <div class="cover-section">
+      <img appImgBroken class="cover-track" [src]="track.cover" [alt]="track.name">
+      <div class="cover-info">
+          <div class="name-track">{{track.name}}</div>
+          <div class="name-track-details">{{track.artist.name}}</div>
+      </div>
+  </div>
+
+</ng-template>

@@ -1,7 +1,7 @@
 <div class="side-bar">
   <div><i class="fa-brands fa-spotify"></i></div>
   <ul class="side-bar__list list-one">
-    <li
+    <li [routerLink]="item.router" [queryParams]="{key1: 'values1'}"
       *ngFor="let item of mainMenu.defaultOptions"
     >
       <div class="list-wrapper-item">

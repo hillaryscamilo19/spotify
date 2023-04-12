@@ -1,45 +1,45 @@
 {
   "data": [{
           "_id": 1,
-          "name": "Getting Over",
-          "album": "One Love",
-          "cover": "https://jenesaispop.com/wp-content/uploads/2009/09/guetta_onelove.jpg",
+          "name": "Segundo Plato",
+          "album": "SI AYER FUERA HOY",
+          "cover": "https://images.genius.com/0fed09f4db2f90cba8e4dd61715dfc0c.1000x1000x1.png",
           "artist": {
-              "name": "David Guetta",
-              "nickname": "David Guetta",
-              "nationality": "FR"
+              "name": "morat",
+              "nickname": "morat",
+              "nationality": "colombiano"
           },
           "duration": {
               "start": 0,
               "end": 333
           },
-          "url": "http://localhost:3000/track.mp3"
+          "url": "https://youtu.be/WoSKTkaEUv4"
       },
       {
           "_id": 2,
-          "name": "Snow Tha Product || BZRP Music Sessions #39",
-          "album": "BZRP Music Sessions",
-          "cover": "https://is5-ssl.mzstatic.com/image/thumb/Features125/v4/9c/b9/d0/9cb9d017-fcf6-28c6-81d0-e9ac5b0f359e/pr_source.png/800x800cc.jpg",
+          "name": "Llamada Perdida",
+          "album": "SI AYER FUERA HOY",
+          "cover": "https://i.scdn.co/image/ab67616d0000b2736b4bfa636a853468b9d30c0d",
           "artist": {
-              "name": "Snow",
-              "nickname": "Snow",
-              "nationality": "US"
+              "name": "morat",
+              "nickname": "morat",
+              "nationality": "colombiano"
           },
           "duration": {
               "start": 0,
               "end": 333
           },
-          "url": "http://localhost:3000/track-1.mp3"
+          "url": "app/data/plya/y2mate.com - Segundos Platos.mp3"
       },
       {
           "_id": 3,
-          "name": "Calypso (Original Mix)",
-          "album": "Round Table Knights",
-          "cover": "https://cdns-images.dzcdn.net/images/cover/1db3f8f185e68f26feaf0b9d72ff1645/350x350.jpg",
+          "name": "Un Millon Como Tu",
+          "album": "Lasso",
+          "cover": "https://i.scdn.co/image/ab67616d0000b273c8c158d6760f738b818bee17",
           "artist": {
-              "name": "Round Table Knights",
-              "nickname": "Round Table Knights",
-              "nationality": "US"
+              "name": "Lasso",
+              "nickname": "Lasso",
+              "nationality": "Venezuela"
           },
           "duration": {
               "start": 0,
@@ -49,13 +49,13 @@
       },
       {
           "_id": 4,
-          "name": "Bad Habits",
-          "album": "Ed Sheeran",
-          "cover": "https://www.lahiguera.net/musicalia/artistas/ed_sheeran/disco/11372/tema/25301/ed_sheeran_bad_habits-portada.jpg",
+          "name": "Odio Que No Te Odio",
+          "album": "Lasso",
+          "cover": "https://i.scdn.co/image/ab67616d0000b273c011b245a7a1a2e432776262",
           "artist": {
-              "name": "Ed Sheeran",
-              "nickname": "Ed Sheeran",
-              "nationality": "UK"
+              "name": "Lasso",
+              "nickname": "Lasso",
+              "nationality": "Venezuela"
           },
           "duration": {
               "start": 0,
@@ -65,13 +65,13 @@
       },
       {
           "_id": 5,
-          "name": "BEBE (Official Video)",
-          "album": "Giolì & Assia",
-          "cover": "https://i.scdn.co/image/ab67616d0000b27345ca41b0d2352242c7c9d4bc",
+          "name": "Tanto",
+          "album": "Aire(Version Dia)",
+          "cover": "https://happyfm.es/wp-content/uploads/2019/10/tanto-de-jesse-joy-y-luis-fonsi-letra-y-video-01.jpg",
           "artist": {
-              "name": "Giolì & Assia",
-              "nickname": "Giolì & Assia",
-              "nationality": "IT"
+              "name": "Jesse & Joy",
+              "nickname": "Jesse & Joy",
+              "nationality": "México"
           },
           "duration": {
               "start": 0,
@@ -81,12 +81,12 @@
       },
       {
           "_id": 6,
-          "name": "T.N.T. (Live At River Plate, December 2009)",
-          "album": "AC/DC",
-          "cover": "https://cdns-images.dzcdn.net/images/cover/ba5eaf2f3a49768164d0728b7ba64372/500x500.jpg",
+          "name": "Shape of you",
+          "album": "+ (Deluxe)",
+          "cover": "https://upload.wikimedia.org/wikipedia/en/b/b4/Shape_Of_You_%28Official_Single_Cover%29_by_Ed_Sheeran.png",
           "artist": {
-              "name": "AC/DC",
-              "nickname": "AC/DC",
+              "name": "Ed Sheeran",
+              "nickname": "Ed Sheeran",
               "nationality": "US"
           },
           "duration": {
@@ -97,13 +97,13 @@
       },
       {
           "_id": 7,
-          "name": "50 Cent - Candy Shop (feat. Olivia)",
-          "album": "50 Cent",
-          "cover": "https://i.scdn.co/image/ab67616d0000b27391f7222996c531b981e7bb3d",
+          "name": "Bachata En Fukuoka",
+          "album": "Asondeguerra",
+          "cover": "https://i.ytimg.com/vi/C8dwPIRcqlI/maxresdefault.jpg",
           "artist": {
-              "name": "50 Cent",
-              "nickname": "50 Cent",
-              "nationality": "US"
+              "name": "Juan Luis Guerra",
+              "nickname": "Juan Luis Guerra",
+              "nationality": "Dominicano"
           },
           "duration": {
               "start": 0,
@@ -113,19 +113,51 @@
       },
       {
           "_id": 8,
-          "name": "Bésame💋",
-          "album": "Valentino Ft MTZ Manuel Turizo (Video Oficial)",
-          "cover": "https://i1.sndcdn.com/artworks-000247627460-1hqnjr-t500x500.jpg",
+          "name": "People Watching",
+          "album": "Superache",
+          "cover": "https://i.scdn.co/image/ab67616d0000b2735597dc66a5d954fca364f264",
           "artist": {
-              "name": "Valentino",
-              "nickname": "Valentino",
-              "nationality": "CO"
+              "name": "Conan Gray",
+              "nickname": "Conan Gray",
+              "nationality": "estadounidense"
           },
           "duration": {
               "start": 0,
               "end": 333
           },
           "url": "http://localhost:3000/track-7.mp3"
-      }
+      },
+      {
+        "_id": 8,
+        "name": "Waiting For Love",
+        "album": "Avicii",
+        "cover": "https://i.ytimg.com/vi/cHHLHGNpCSA/maxresdefault.jpg",
+        "artist": {
+            "name": "Avicii",
+            "nickname": "Avicii",
+            "nationality": "Suecia"
+        },
+        "duration": {
+            "start": 0,
+            "end": 333
+        },
+        "url": "http://localhost:3000/track-7.mp3"
+    },
+    {
+      "_id": 8,
+      "name": "Dicelo",
+      "album": "Emociones",
+      "cover": "https://i.ytimg.com/vi/EKZfPGA3Hjw/maxresdefault.jpg",
+      "artist": {
+          "name": "Jay Wheeler & Zhamira Zambrano",
+          "nickname": "Jay Wheele",
+          "nationality": "Puerto Rico"
+      },
+      "duration": {
+          "start": 0,
+          "end": 333
+      },
+      "url": "http://localhost:3000/track-7.mp3"
+  }
   ]
 }
