@@ -1,6 +1,6 @@
-import { TracksModules } from './../../core/model/tracks.model';
+ import { TracksModules } from './../../core/model/tracks.model';
 import { Pipe, PipeTransform } from '@angular/core';
-import { v4 as uuidv4} from 'uuid';
+// import { v4 as uuidv4} from 'uuid';
 
 @Pipe({
   name: 'orderList'
