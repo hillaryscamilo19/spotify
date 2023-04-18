@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as dataRaw from '../../../data/tracks.json';
-import { TracksModules } from '@core/model/tracks.model';
+import { TrackModel } from './../../../core/model/tracks.model';
 
 
 @Component({
@@ -9,7 +9,7 @@ import { TracksModules } from '@core/model/tracks.model';
   styleUrls: ['./play-list-body.component.css']
 })
 export class PlayListBodyComponent implements OnInit{
-  tracks: TracksModules [] = []
+  tracks: TrackModel [] = []
   optionSort: { property: string | null, order: string } = { property: null, order: 'asc' }
 
   constructor(){}

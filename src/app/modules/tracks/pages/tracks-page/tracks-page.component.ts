@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TracksModules } from '@core/model/tracks.model';
+import { TrackModel } from '../../../../core/model/tracks.model';
 import * as dataRaw from '../../../../data/tracks.json';
 
 @Component({
@@ -8,7 +8,7 @@ import * as dataRaw from '../../../../data/tracks.json';
   styleUrls: ['./tracks-page.component.css']
 })
 export class TracksPageComponent {
-  mockTracksList: Array<TracksModules> = [
+  mockTracksList: Array<TrackModel> = [
 
   ]
   // tracksTrending: Array<TrackModel> = []

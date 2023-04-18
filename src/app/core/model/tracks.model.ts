@@ -1,6 +1,6 @@
 import { ArtisModel } from './artist.model';
 
-export interface TracksModules{
+export interface TrackModel{
   name: String,
   album: String,
   cover: String,

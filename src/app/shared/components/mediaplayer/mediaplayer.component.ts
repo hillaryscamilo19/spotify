@@ -1,7 +1,7 @@
-import { TracksModule } from './../../../modules/tracks/tracks.module';
 import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { MultimediaService } from '@shared/services/multimedia.service';
 import { Subscription } from 'rxjs';
-import { TracksModules } from '@core/model/tracks.model';
+import { TrackModel } from './../../../core/model/tracks.model';
 
 @Component({
   selector: 'app-mediaplayer',
@@ -9,7 +9,7 @@ import { TracksModules } from '@core/model/tracks.model';
   styleUrls: ['./mediaplayer.component.css']
 })
 export class MediaplayerComponent implements OnInit, OnDestroy {
-  mockCover: TracksModules = {
+  mockCover: TrackModel = {
     cover: 'https://i.ytimg.com/vi/B_1YBFttefY/maxresdefault.jpg',
     name: 'Te Espere',
     album: 'Jesse & Joy ',
@@ -22,12 +22,22 @@ export class MediaplayerComponent implements OnInit, OnDestroy {
   ListObservers$: Array<Subscription> = []
   state: string = 'paused'
 
-  constructor(){}
+  constructor(private multimedia: MultimediaService){}
   ngOnInit(): void {
+    const observer1$: Subscription = this.multimedia.callback.subscribe(
+      (response:TrackModel) =>{
+        console.log('Recibiendo cancion', response);
+
+      }
+    )
+
+    this.ListObservers$ = [observer1$]
 
   }
 
   ngOnDestroy(): void {
+    this.ListObservers$.forEach(u => u.unsubscribe())
+    console.log('BOOM!');
 
   }
 

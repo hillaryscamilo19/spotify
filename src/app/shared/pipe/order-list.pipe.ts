@@ -1,4 +1,4 @@
- import { TracksModules } from './../../core/model/tracks.model';
+import { TrackModel } from './../../../app/core/model/tracks.model';
 import { Pipe, PipeTransform } from '@angular/core';
 // import { v4 as uuidv4} from 'uuid';
 
@@ -7,7 +7,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class OrderListPipe implements PipeTransform {
 
-  transform(value: Array<any>, args: string | null = null, sort: string = 'asc'): TracksModules[] {
+  transform(value: Array<any>, args: string | null = null, sort: string = 'asc'): TrackModel[] {
     if(args === null){
       return value
     }else{
