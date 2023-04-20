@@ -5,12 +5,10 @@ import * as dataRaw from '../../../../data/tracks.json';
 @Component({
   selector: 'app-tracks-page',
   templateUrl: './tracks-page.component.html',
-  styleUrls: ['./tracks-page.component.css']
+  styleUrls: ['./tracks-page.component.css'],
 })
 export class TracksPageComponent {
-  mockTracksList: Array<TrackModel> = [
-
-  ]
+  mockTracksList: Array<TrackModel> = [];
   // tracksTrending: Array<TrackModel> = []
   // tracksRandom: Array<TrackModel> = []
   // listObservers$: Array<Subscription> = []
@@ -18,8 +16,8 @@ export class TracksPageComponent {
   // constructor(private trackService: TrackService) { }
 
   ngOnInit(): void {
-    const { data }: any = (dataRaw as any).default
-    this.mockTracksList = data
+    const { data }: any = (dataRaw as any).default;
+    this.mockTracksList = data;
     // this.loadDataAll() //TODO 📌📌
     // this.loadDataRandom() //TODO 📌📌
   }
@@ -36,7 +34,5 @@ export class TracksPageComponent {
   //     })
   // }
 
-  ngOnDestroy(): void {
-
-  }
+  ngOnDestroy(): void {}
 }

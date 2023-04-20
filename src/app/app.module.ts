@@ -20,7 +20,6 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     HomeModule,
     HttpClientModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent]
