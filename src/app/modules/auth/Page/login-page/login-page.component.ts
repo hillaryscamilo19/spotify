@@ -1,6 +1,9 @@
+import { Router } from '@angular/router';
 import { AuthService } from './../../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+
+import { response } from 'express';
 
 @Component({
   selector: 'app-login-page',
@@ -10,7 +13,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class LoginPageComponent implements OnInit {
   formLogin: FormGroup = new FormGroup({});
 
-  constructor(private asAuthServices: AuthService) {}
+  constructor(private asAuthServices: AuthService,
+    private router: Router) {}
 
 
   ngOnInit(): void {
@@ -33,6 +37,9 @@ export class LoginPageComponent implements OnInit {
     const {email, password} = this.formLogin.value
     this.asAuthServices.sendCredentials(email, password)
 
+    .subscribe(responseOk => {
+      console.log('Seccion iniciada correcta', responseOk);
+    })
   }
 
 }

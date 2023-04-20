@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment.prod';
   providedIn: 'root'
 })
 export class AuthService {
-  private readonly URL = environment
+  private readonly URL = environment.api
   constructor(private http: HttpClient) { }
 
   sendCredentials(email: string, password: string): Observable<any> {
