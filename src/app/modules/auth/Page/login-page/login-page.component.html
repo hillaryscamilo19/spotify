@@ -19,7 +19,7 @@
           <div class="form-steps">
               <a class="link" href="">¿Se te ha olvidado la contraseña?</a>
           </div>
-          <div>
+          <div *ngIf="errorSession">
               Ocurrio un error con tu email o password
           </div>
           <div class="form-action">
