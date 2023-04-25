@@ -14,7 +14,7 @@ export class LoginPageComponent implements OnInit {
   errorSession: boolean = false;
   formLogin: FormGroup = new FormGroup({});
 
-  constructor(private asAuthServices: AuthService, private cookie: CookieService, private router: Router) {}
+  constructor(private authService: AuthService, private cookie: CookieService, private router: Router) {}
 
 
   ngOnInit(): void {
@@ -35,7 +35,7 @@ export class LoginPageComponent implements OnInit {
 
   sendLogin(): void{
     const {email, password} = this.formLogin.value
-    this.asAuthServices.sendCredentials(email, password)
+    this.authService.sendCredentials(email, password)
 
     .subscribe(responseOk => {
       console.log('Seccion iniciada correcta', responseOk);
