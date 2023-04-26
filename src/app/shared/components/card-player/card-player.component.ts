@@ -22,6 +22,6 @@ export class CardPlayerComponent implements OnInit {
   ngOnInit(): void {}
 
   sendPlay(track: TrackModel): void{
-    this.multimedia.callback.emit(track)
+    this.multimedia.trackInfo$.next(track)
   }
 }

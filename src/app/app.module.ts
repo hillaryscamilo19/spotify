@@ -1,3 +1,5 @@
+import { HistoryModule } from './modules/history/history.module';
+import { RouterModule } from '@angular/router';
 import { HomeModule } from './modules/home/home.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -17,15 +19,13 @@ import { ErrorComponent } from './modules/error404/page/error/error.component';
   declarations: [
     AppComponent,
     ErrorComponent,
-
-
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HomeModule,
     HttpClientModule,
+    HistoryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

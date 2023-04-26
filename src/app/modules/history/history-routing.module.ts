@@ -5,7 +5,8 @@ import { HistoryPageComponent } from './page/history-page/history-page.component
 const routes: Routes = [
   {
     path: '',
-    component: HistoryPageComponent
+    component: HistoryPageComponent,
+    outlet: 'child'
   }
 ];
 

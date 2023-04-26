@@ -25,6 +25,7 @@ import { ImgBrokenDirective } from './Directives/img-broken.directive';
     PlayListBodyComponent,
     OrderListPipe,
     ImgBrokenDirective,
+
   ],
   imports: [
     CommonModule,

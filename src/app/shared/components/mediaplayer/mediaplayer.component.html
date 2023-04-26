@@ -18,12 +18,12 @@
 <!-- ZONE TEMPLATES -->
 
 <ng-template #artistZone>
-  <div class="artist-inside" >
+  <div class="artist-inside" *ngIf="multimedia.trackInfo$ | async as mockCover">
 
       <img [src]="mockCover.cover" alt="" class="cover">
       <div class="track-info">
           <h3 class="track-title">{{mockCover.name}}</h3>
-          <h5 class="track-title sub-title">{{mockCover.album}}</h5>
+          <h5 class="track-title sub-title">{{mockCover?.album}}</h5>
       </div>
       <div class="track-like">
           <button class="btn-like">
@@ -37,40 +37,35 @@
   <div class="player-controls-inside">
       <div class="buttons-media">
           <button class="arrow btn">
-            <!-- <i class="fa-solid fa-shuffle"></i> -->
-            <i class="fa-solid fa-backward-step"></i>
+              <i class="uil uil-previous"></i>
           </button>
-          <button class="play btn">
+          <button (click)="multimedia.togglePlayer()" class="play btn">
               <i [ngClass]="{
-                  'fa-solid fa-circle-play':state === 'paused',
-                  'fa-regular fa-circle-pause':state !== 'paused'
+                  'uil-play-circle':state === 'paused',
+                  'uil-pause-circle':state !== 'paused'
               }" class="uil "></i>
 
           </button>
           <button class="arrow btn">
-            <i class="fa-solid fa-forward-step"></i>
-            <!-- <i class="fa-solid fa-repeat"></i> -->
+              <i class="uil uil-step-forward"></i>
           </button>
       </div>
       <div class="media-linetime">
 
-          <div class="time">1:30</div>
-          <span #progressBar class="time-progress">
-              <span class="time-progress-live" >
+          <div class="time">{{multimedia.timeElapsed$ | async}}</div>
+          <span #progressBar (click)="handlePosition($event)" class="time-progress">
+              <span class="time-progress-live" [style.width]="(multimedia.playerPercentage$ | async)+'%'">
               </span>
           </span>
-          <div class="time">4:00</div>
+          <div class="time">{{multimedia.timeRemaining$ | async}}</div>
       </div>
   </div>
 </ng-template>
 
 <ng-template #playerAudio>
   <div class="player-audio-inside">
-    <button  class="btn-media">
-      <i class="uil uil-microphone"></i>
-    </button>
       <button class="btn-media">
-        <i class="uil uil-list-ul"></i>
+          <i class="uil uil-list-ui-alt"></i>
       </button>
       <button class="btn-media">
           <i class="uil uil-boombox"></i>
