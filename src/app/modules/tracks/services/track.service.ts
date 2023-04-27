@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root',
 })
 export class TrackService {
-  private readonly URL = environment.api;
+  private readonly URL = environment.production;
 
   constructor(private http: HttpClient) {}
 

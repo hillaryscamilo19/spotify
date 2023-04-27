@@ -12,7 +12,7 @@ export class CardPlayerComponent implements OnInit {
   constructor(private multimedia: MultimediaService) {}
 
   @Input() mode: 'small' | 'big' = 'small';
-  @Input() track: TrackModel= {
+  @Input() track: TrackModel = {
     _id: 0,
     name: '',
     album: '',

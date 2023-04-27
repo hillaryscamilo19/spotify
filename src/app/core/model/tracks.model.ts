@@ -1,10 +1,10 @@
 import { ArtisModel } from './artist.model';
 
 export interface TrackModel{
-  name: String,
-  album: String,
-  cover: String,
-  url: String,
-  _id: String |  number,
+  name: string,
+  album: string,
+  cover: string,
+  url: string,
+  _id: string |  number,
   artist?: ArtisModel
 }

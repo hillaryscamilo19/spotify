@@ -13,7 +13,7 @@
               "start": 0,
               "end": 333
           },
-          "url": "https://youtu.be/WoSKTkaEUv4"
+          "url": "http://localhost:3001/track.mp3"
       },
       {
           "_id": 2,
@@ -29,42 +29,26 @@
               "start": 0,
               "end": 333
           },
-          "url": "app/data/plya/y2mate.com - Segundos Platos.mp3"
+          "url": "http://localhost:3001/track-1.mp3"
       },
       {
-          "_id": 3,
-          "name": "Un Millon Como Tu",
-          "album": "Lasso",
-          "cover": "https://i.scdn.co/image/ab67616d0000b273c8c158d6760f738b818bee17",
-          "artist": {
-              "name": "Lasso",
-              "nickname": "Lasso",
-              "nationality": "Venezuela"
-          },
-          "duration": {
-              "start": 0,
-              "end": 333
-          },
-          "url": "http://localhost:3000/track-2.mp3"
-      },
+        "_id": 3,
+        "name": "Odio Que No Te Odio",
+        "album": "Lasso",
+        "cover": "https://i.scdn.co/image/ab67616d0000b273c011b245a7a1a2e432776262",
+        "artist": {
+            "name": "Lasso",
+            "nickname": "Lasso",
+            "nationality": "Venezuela"
+        },
+        "duration": {
+            "start": 0,
+            "end": 333
+        },
+        "url": "http://localhost:3001/track-2.mp3"
+    },
       {
           "_id": 4,
-          "name": "Odio Que No Te Odio",
-          "album": "Lasso",
-          "cover": "https://i.scdn.co/image/ab67616d0000b273c011b245a7a1a2e432776262",
-          "artist": {
-              "name": "Lasso",
-              "nickname": "Lasso",
-              "nationality": "Venezuela"
-          },
-          "duration": {
-              "start": 0,
-              "end": 333
-          },
-          "url": "http://localhost:3000/track-4.mp3"
-      },
-      {
-          "_id": 5,
           "name": "Tanto",
           "album": "Aire(Version Dia)",
           "cover": "https://happyfm.es/wp-content/uploads/2019/10/tanto-de-jesse-joy-y-luis-fonsi-letra-y-video-01.jpg",
@@ -77,10 +61,10 @@
               "start": 0,
               "end": 333
           },
-          "url": "http://localhost:3000/track-3.mp3"
+          "url": "http://localhost:3001/track-4.mp3"
       },
       {
-          "_id": 6,
+          "_id": 5,
           "name": "Shape of you",
           "album": "+ (Deluxe)",
           "cover": "https://upload.wikimedia.org/wikipedia/en/b/b4/Shape_Of_You_%28Official_Single_Cover%29_by_Ed_Sheeran.png",
@@ -93,10 +77,10 @@
               "start": 0,
               "end": 333
           },
-          "url": "http://localhost:3000/track-5.mp3"
+          "url": "http://localhost:3001/track-5.mp3"
       },
       {
-          "_id": 7,
+          "_id": 6,
           "name": "Bachata En Fukuoka",
           "album": "Asondeguerra",
           "cover": "https://i.ytimg.com/vi/C8dwPIRcqlI/maxresdefault.jpg",
@@ -109,10 +93,10 @@
               "start": 0,
               "end": 333
           },
-          "url": "http://localhost:3000/track-6.mp3"
+          "url": "http://localhost:3001/track-14.mp4"
       },
       {
-          "_id": 8,
+          "_id": 7,
           "name": "People Watching",
           "album": "Superache",
           "cover": "https://i.scdn.co/image/ab67616d0000b2735597dc66a5d954fca364f264",
@@ -125,10 +109,10 @@
               "start": 0,
               "end": 333
           },
-          "url": "http://localhost:3000/track-7.mp3"
+          "url": "http://localhost:3001/track-6.mp3"
       },
       {
-        "_id": 9,
+        "_id": 8,
         "name": "Waiting For Love",
         "album": "Avicii",
         "cover": "https://i.ytimg.com/vi/cHHLHGNpCSA/maxresdefault.jpg",
@@ -141,10 +125,10 @@
             "start": 0,
             "end": 333
         },
-        "url": "http://localhost:3000/track-7.mp3"
+        "url": "http://localhost:3001/track-7.mp4"
     },
     {
-      "_id": 10,
+      "_id": 9,
       "name": "Dicelo",
       "album": "Emociones",
       "cover": "https://i.ytimg.com/vi/EKZfPGA3Hjw/maxresdefault.jpg",
@@ -157,7 +141,88 @@
           "start": 0,
           "end": 333
       },
-      "url": "http://localhost:3000/track-7.mp3"
-  }
+      "url": "http://localhost:3001/track-13.mp4"
+  },
+  {
+    "_id": 10,
+    "name": "Locked Away",
+    "album": "R.City",
+    "cover": "https://i.scdn.co/image/ab67616d0000b2739519b1a9e2b552407e65b01a",
+    "artist": {
+        "name": "R.City",
+        "nickname": "R.City",
+        "nationality": "Estados Unidos"
+    },
+    "duration": {
+        "start": 0,
+        "end": 333
+    },
+    "url": "http://localhost:3001/track-8.mp3"
+},
+{
+  "_id": 11,
+  "name": "Anymore",
+  "album": "Roque",
+  "cover": "https://i.scdn.co/image/ab67616d00001e0292eb1bbf483392790e08387b",
+  "artist": {
+      "name": "Roque",
+      "nickname": "Roque",
+      "nationality": "Estados Unidos"
+  },
+  "duration": {
+      "start": 0,
+      "end": 333
+  },
+  "url": "http://localhost:3001/track-9.mp4"
+},
+{
+  "_id": 12,
+  "name": "Happier",
+  "album": "Happier",
+  "cover": "https://upload.wikimedia.org/wikipedia/en/e/e5/Marshmello_and_Bastille_Happier.png",
+  "artist": {
+      "name": "Marshmello Bastille",
+      "nickname": "Marshmello",
+      "nationality": "Republica Dominicana"
+  },
+  "duration": {
+      "start": 0,
+      "end": 333
+  },
+  "url": "http://localhost:3001/track-10.mp4"
+},
+
+{
+  "_id": 13,
+  "name": "Marianela",
+  "album": "Marianela",
+  "cover": "https://images.genius.com/0240b1a0bb243630080e1cbe3d6a0664.640x640x1.jpg",
+  "artist": {
+      "name": "Lirico en la Casa",
+      "nickname": "Lirico en la Casa",
+      "nationality": "Republica Dominicana"
+  },
+  "duration": {
+      "start": 0,
+      "end": 333
+  },
+  "url": "http://localhost:3001/track-11.mp4"
+},
+{
+  "_id": 14,
+  "name": "Mi Mala",
+  "album": "Mi Mala",
+  "cover": "https://i.scdn.co/image/ab67616d0000b273d6480a8d0d9c85d0c25fd8e0",
+  "artist": {
+      "name": "Mau y Ricky",
+      "nickname": "Mau y Ricky + Karol G",
+      "nationality": "Venezuela"
+  },
+  "duration": {
+      "start": 0,
+      "end": 333
+  },
+  "url": "http://localhost:3001/track-12.mp4"
+}
   ]
 }
