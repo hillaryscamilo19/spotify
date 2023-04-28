@@ -8,13 +8,13 @@ import { TrackModel } from './../../../core/model/tracks.model';
   styleUrls: ['./play-list-body.component.css']
 })
 export class PlayListBodyComponent implements OnInit{
-  @Input() tracks: TrackModel [] = []
+  @Input() tracks: TrackModel[] = []
   optionSort: { property: string | null, order: string } = { property: null, order: 'asc' }
 
   constructor(){}
 
   ngOnInit(): void {
-    
+
   }
 
 

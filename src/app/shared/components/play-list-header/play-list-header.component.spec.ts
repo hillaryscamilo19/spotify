@@ -8,10 +8,10 @@ describe('PlayListHeaderComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PlayListHeaderComponent ]
-    })
-    .compileComponents();
-
+      declarations: [PlayListHeaderComponent],
+    }).compileComponents();
+  });
+  beforeEach(() => {
     fixture = TestBed.createComponent(PlayListHeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
