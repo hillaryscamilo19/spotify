@@ -19,4 +19,10 @@ export class SearchComponent {
       console.log('🔴 Llamamos a nuestra API HTTP GET---> ', term);
     }
   }
+
+
+  nameFilter(): void{
+
+  }
+
 }

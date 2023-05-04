@@ -6,12 +6,16 @@ import { HistoryRoutingModule } from './history-routing.module';
 import { HistoryPageComponent } from './page/history-page/history-page.component';
 import { SharedModule } from "../../shared/shared.module";
 import { FormsModule } from '@angular/forms';
+import { SearchListPipe } from './component/pipe/search-list.pipe';
+
 
 
 @NgModule({
     declarations: [
         HistoryPageComponent,
-        SearchComponent
+        SearchComponent,
+        SearchListPipe,
+
     ],
     imports: [
         CommonModule,

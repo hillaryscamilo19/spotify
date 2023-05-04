@@ -1,0 +1,24 @@
+.container-fluid{
+  background-color: rgb(50, 50, 50);
+}
+
+.d-flex{
+  background-color: rgb(50, 50, 50);
+}
+
+.dropdown-menu{
+  background-color: rgb(50, 50, 50);
+}
+
+.nav-item {
+  background-color: rgb(50, 50, 50);
+}
+
+.dropdown-item{
+  color: aliceblue;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 0;
+    background-color: rgb(50,50,50);
+}
