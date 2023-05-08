@@ -1,3 +1,4 @@
+import { GoogleservicService } from './../../services/googleservic.service';
 import { Router } from '@angular/router';
 import { AuthService } from './../../services/auth.service';
 import { Component, OnInit } from '@angular/core';
@@ -11,10 +12,14 @@ import { response } from 'express';
   styleUrls: ['./login-page.component.css']
 })
 export class LoginPageComponent implements OnInit {
+  usuario = {
+    email: '',
+    password: '',
+  };
   errorSession: boolean = false;
   formLogin: FormGroup = new FormGroup({});
 
-  constructor(private authService: AuthService, private cookie: CookieService, private router: Router) {}
+  constructor(private GoogleApi: GoogleservicService,private authService: AuthService, private cookie: CookieService, private router: Router) {}
 
 
   ngOnInit(): void {
@@ -47,6 +52,17 @@ export class LoginPageComponent implements OnInit {
       this.errorSession = true
       console.log('⚠⚠⚠⚠Ocurrio error con tu email o password');
     })
+  }
+
+
+
+  googleToken() {
+    const { email, password } = this.usuario;
+    console.log(this.usuario);
+    this.GoogleApi.loginWithGoogle(email, password).then((res) => {
+      console.log('se registro:', res);
+      this.router.navigate(['/']);
+    });
   }
 
 }
