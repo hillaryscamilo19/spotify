@@ -45,12 +45,12 @@ export class LoginPageComponent implements OnInit {
     .subscribe(responseOk => {
       console.log('Seccion iniciada correcta', responseOk);
       const { tokenSession, data } = responseOk;
-      this.cookie.set('token', tokenSession, 4, '/') //TODO:📌📌📌📌
+      this.cookie.set('token', tokenSession, 4, '/')
       this.router.navigate(['/', 'tracks'])
     },
-    err => {//TODO error 400>=
+    err => {
       this.errorSession = true
-      console.log('⚠⚠⚠⚠Ocurrio error con tu email o password');
+      console.log('⚠Ocurrio error con tu email o password');
     })
   }
 
